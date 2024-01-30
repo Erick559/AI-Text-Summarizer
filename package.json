@@ -1,0 +1,11 @@
+{
+  "name": "ai-text-summarizer",
+  "version": "1.0.0",
+  "description": "This is a text summarizer that uses AI to summarize any inputed text.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erick559",
+  "license": "ISC"
+}
