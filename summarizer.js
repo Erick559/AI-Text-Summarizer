@@ -23,17 +23,12 @@ async function summarizeText(text) {
         data: data
     };
 
-    async function makeRequest() {
-        try {
-            const response = await axios.request(config);
-            console.log(JSON.stringify(response.data));
-        } catch (error) {
-            console.log(error);
-        }
+    try {
+        const response = await axios.request(config);
+        console.log(JSON.stringify(response.data));
+    } catch (error) {
+        console.log(error);
     }
-
-    makeRequest();
-
 
 }
 
