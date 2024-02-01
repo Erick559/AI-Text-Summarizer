@@ -1,4 +1,5 @@
 const express = require('express');
+const summarizeText = require('./summarizer.js')
 const app = express();
 const port = 3000;
 
