@@ -6,3 +6,13 @@ textArea.addEventListener('input', verifyTextLength)
 submitButton.addEventListener('click', submitData)
 
 submitButton.disabled = true;
+
+function verifyTextLength(e) {
+    const textarea = e.target
+
+    if (textarea.value.length > 200 && textarea.value.length < 10000) {
+        submitButton.disabled = false;
+    } else {
+        submitButton.disabled = true;
+    }
+}
