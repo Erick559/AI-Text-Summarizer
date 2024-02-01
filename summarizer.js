@@ -17,7 +17,7 @@ async function summarizeText(text) {
         url: 'https://api-inference.huggingface.co/models/facebook/bart-large-cnn',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer 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'
+            'Authorization': 'Bearer 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'
         },
         data: data
     };
