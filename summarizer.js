@@ -5,3 +5,6 @@ async function summarizeText(text) {
     // INSERT CODE SNIPPET FROM POSTMAN BELOW
 
 }
+
+// This allows the summarizeText function to be accessed outside of this file.
+module.exports = summarizeText;
