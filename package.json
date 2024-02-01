@@ -1,15 +1,19 @@
 {
-  "name": "ai-text-summarizer",
-  "version": "1.0.0",
-  "description": "This is a text summarizer that uses AI to summarize any inputed text.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Erick559",
-  "license": "ISC",
-  "dependencies": {
-    "expres": "^0.0.5",
-    "express": "^4.18.2"
-  }
+    "name": "ai-text-summarizer",
+    "version": "1.0.0",
+    "description": "This is a text summarizer that uses AI to summarize any inputed text.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Erick559",
+    "license": "ISC",
+    "dependencies": {
+        "@types/node": "^18.0.6",
+        "axios": "^1.4.0",
+        "body-parser": "^1.20.2",
+        "express": "^4.18.2",
+        "node-fetch": "^3.2.6",
+        "openai": "^3.3.0"
+    }
 }
