@@ -12,10 +12,16 @@ app.use(express.static('public'));
 // Handle POST requests to the '/summarize' endpoint
 
 app.post('/summarize', (req, res) => {
+    const text = req.body.text_to_summarize;
 
-    // TODO: handle POST /summarize request
-
-
+    // call your summarizeText function, passing in the text from the request
+    summarizeText(text)
+        .then(response => {
+            res.send(response); // Send the summary text as a response to the client
+        })
+        .catch(error => {
+            console.log(error.message);
+        });
 });
 
 // Start the server
