@@ -16,3 +16,11 @@ function verifyTextLength(e) {
         submitButton.disabled = true;
     }
 }
+
+function submitData(e) {
+    submitButton.classList.add('submit-button--loading')
+
+    const text_to_summarize = textArea.value
+
+
+}
