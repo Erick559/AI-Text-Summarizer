@@ -25,7 +25,7 @@ async function summarizeText(text) {
 
     try {
         const response = await axios.request(config);
-        console.log(JSON.stringify(response.data));
+        return response.data[0].summary_text;
     } catch (error) {
         console.log(error);
     }
