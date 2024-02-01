@@ -14,11 +14,10 @@ async function summarizeText(text) {
 
     let config = {
         method: 'post',
-        maxBodyLength: Infinity,
         url: 'https://api-inference.huggingface.co/models/facebook/bart-large-cnn',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer' + process.env['ACCESS_TOKEN']
+            'Authorization': 'Bearer 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'
         },
         data: data
     };
@@ -26,8 +25,8 @@ async function summarizeText(text) {
     try {
         const response = await axios.request(config);
         return response.data[0].summary_text;
-    } catch (error) {
-        console.log(error);
+    } catch (err) {
+        console.log(err);
     }
 
 }
