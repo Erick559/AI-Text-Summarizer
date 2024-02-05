@@ -6,3 +6,5 @@ The heart of this application lies in the integration of Hugging Face's API, uti
 The user interface is crafted with a user-friendly design, making it easy for anyone to input text and receive a summary instantly. The interactive and responsive web design enhances the overall user experience
 
 Behind the scenes, Node.js and Express handle the server-side operations, ensuring smooth communication between the front end and the Hugging Face API. This architecture guarantees fast and reliable summarization results.
+
+During the development process, Postman played a crucial role in testing and refining the integration with the Hugging Face API. This allowed for efficient debugging and optimization, ensuring the robust performance of the summarizer.
